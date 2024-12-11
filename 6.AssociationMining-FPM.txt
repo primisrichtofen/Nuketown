@@ -1,0 +1,22 @@
+Association Mining FPM
+Theory:
+
+Association rule mining is a technique used to find interesting relationships, patterns, or associations among a set of items in large datasets. The Frequent Pattern Mining (FPM) algorithm identifies the most frequent itemsets in a dataset and uses these itemsets to generate association rules. Weka provides several tools to implement these algorithms, such as the Apriori algorithm for finding frequent itemsets and generating association rules.
+
+Algorithm:
+
+1. Generate Candidate Itemsets: 
+   Start with individual items (size 1).
+2. Count Support: 
+   Count the frequency of each itemset.
+3. Prune Infrequent Itemsets: 
+   Remove itemsets below the minimum support threshold.
+4. Generate Larger Itemsets: 
+   Combine frequent itemsets to create larger ones.
+5. Repeat: 
+   Continue until no larger frequent itemsets are found.
+6. Generate Rules: 
+   Create association rules from frequent itemsets based on confidence.
+
+How to Do:
+Load File → Associate → Apriori from Associator

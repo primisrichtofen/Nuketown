@@ -1,0 +1,37 @@
+Page Rank/HITS Algorithm:
+ 
+
+Code(in Python);
+import networkx as nx
+
+G = nx.DiGraph()
+G.add_edges_from([(1, 2), (2, 3), (3, 1), (1, 4), (4, 2)])
+
+pagerank = nx.pagerank(G, alpha=0.85)
+hubs, authorities = nx.hits(G)
+
+print("PageRank:", pagerank)
+print("Hubs:", hubs)
+print("Authorities:", authorities)
+
+Theory:
+PageRank and HITS are link analysis algorithms used to rank nodes in a directed graph. PageRank measures the importance of nodes based on incoming links and a damping factor, modeling a random walk through the graph. HITS assigns two scores: hub scores indicate how well a node links to authoritative nodes, and authority scores show how well a node is linked by hubs. Both methods are widely used in information retrieval and web analysis.
+
+Algorithm:
+1. Input:
+   A directed graph with nodes and edges.
+2. Initialize:
+   Assign equal rank values to all nodes for PageRank.
+   Assign initial hub and authority scores to all nodes for HITS.
+3. PageRank Computation:
+   Update each node's rank as the sum of the ranks of the nodes pointing to it, weighted by the      number of outgoing links.
+   Apply a damping factor to account for random jumps.
+   Repeat until rank values converge.
+4. HITS Computation:
+   Update the hub score as the sum of the authority scores of the nodes it points to.
+   Update the authority score as the sum of the hub scores of the nodes pointing to it.
+   Normalize the hub and authority scores.
+   Repeat until hub and authority scores converge.
+5. Output:
+   PageRank scores for all nodes.
+   Hub and authority scores for all nodes.

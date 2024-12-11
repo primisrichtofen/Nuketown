@@ -1,0 +1,16 @@
+Decision Tree Classifier:
+
+Theory: 
+A Decision Tree is a model that uses a tree-like graph of decisions and their possible consequences. It splits the data into subsets based on the feature values, and the process continues recursively until a stopping criterion is met. It’s widely used in classification tasks due to its simplicity and interpretability.
+
+Algorithm:
+1. Load the dataset into WEKA.
+2. Preprocess the data (optional) for cleaning and transformation.
+3. Select the Decision Tree classifier:
+	 Go to Classify → Trees → J48.
+4. Configure parameters (optional).
+5. Train the model by clicking Start.
+6. Evaluate the model using the output metrics.
+
+How to Do:
+Classify Tab → Trees → J48
