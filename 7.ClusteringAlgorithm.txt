@@ -1,0 +1,21 @@
+Clustering Algorithm
+
+Theory:
+Clustering is an unsupervised machine learning technique used to group data points into clusters based on similarity. Weka provides several clustering algorithms like k-Means, Hierarchical Clustering, and EM (Expectation-Maximization). These algorithms partition the data into groups where points in the same cluster are more similar to each other than to those in other clusters.
+
+Algorithm:
+1. Input: 
+    Dataset with  data points and desired number of clusters 
+2. Initialize: 
+    Randomly select initial centroids.
+3. Assign Points: 
+   Assign each data point to the nearest centroid based on distance.
+4. Update Centroids: 
+    Calculate new centroids as the mean of all points in each cluster.
+5. Repeat: 
+    Reassign points and update centroids until centroids stabilize or maximum iterations are reached.
+6. Output: 
+    Final cluster assignments and centroids.
+
+How to Do:
+Upload File -> Cluster  -> Choose -> SimpleKMeans -> Start
