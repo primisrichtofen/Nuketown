@@ -1,0 +1,21 @@
+Agglomerative Clustering Algorithm:
+
+Theory:
+Agglomerative Clustering is a bottom-up approach to hierarchical clustering. It starts by treating each data point as its own cluster and then iteratively merges the closest clusters until only one cluster remains or a stopping criterion is reached. The closeness of clusters is typically determined using a distance metric, such as Euclidean distance.
+
+Algorithm:
+1. Input: 
+    Dataset with data points.
+2. Initialize:
+    Each data point starts as its own cluster.
+3. Calculate Pairwise Distances: 
+    Compute the distance between each pair of clusters.
+4. Merge Closest Clusters: 
+    Merge the two closest clusters into one.
+5. Repeat: 
+    Repeat steps 3 and 4 until the desired number of clusters is reached or all points are merged into one cluster.
+6. Output: 
+    The final cluster assignments.
+
+How to Do:
+Open File -> Cluster -> Choose -> HierarchicalClusterer -> Select Needed Parameters -> Start 
