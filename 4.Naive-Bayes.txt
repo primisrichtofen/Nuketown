@@ -1,0 +1,20 @@
+Naive Bayes Classifier
+
+Theory:
+Naive Bayes is a probabilistic classifier based on Bayes' theorem, assuming that the features are conditionally independent given the class. It’s effective for classification problems, especially with large datasets and when the assumption of independence holds reasonably well.
+
+Algorithm:
+
+1. Load the dataset: Import the dataset into WEKA.
+2. Preprocess the data: (Optional) Clean the data, handle missing values, and perform any necessary transformations.
+3. Select the Naive Bayes classifier:
+4. Go to the Classify tab in WEKA.
+5. Choose Classifier → Bayes → NaiveBayes.
+6. Configure parameters (optional): If desired, configure parameters like kernel density estimation.
+7. Train the model: Click Start to train the classifier using the selected dataset.
+8. Evaluate the model: Check the output for performance metrics like accuracy, confusion matrix, etc.
+
+How to do in WEKA:
+Go to the Classify tab.
+Select Bayes → NaiveBayes.
+Click Start to train and evaluate the classifier.

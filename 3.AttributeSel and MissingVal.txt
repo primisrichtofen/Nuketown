@@ -1,0 +1,31 @@
+Experiment 3: Handling Missing Data and Attribute Selection
+
+(i) Handling Missing Data
+
+Theory:
+Handling missing values can be done by replacing missing data or removing instances/attributes with missing values.
+
+Algorithm:
+
+1. Load the dataset.
+2. Identify missing values.
+3. Choose a method to handle them (imputation or removal).
+4. Apply the method.
+
+How to do:
+Go to Preprocess → Filter → Choose filters → Unsupervised → Attribute → NumericCleaner.
+
+(ii) Attribute Selection
+
+Theory:
+Attribute selection reduces the number of irrelevant or redundant features in a dataset, improving model performance and efficiency.
+
+Algorithm:
+
+1. Load the dataset.
+2. Choose an attribute evaluator (e.g., InfoGain, CfsSubsetEval).
+3. Choose a search method (e.g., BestFirst, GeneticSearch).
+4. Apply the selection to get the relevant attributes.
+
+How to do:
+Go to Preprocess → Filters → Supervised → Attribute → AttributeSelection.
