@@ -1,0 +1,25 @@
+Association Rule Mining:
+
+Theory:
+Association Rule Mining identifies relationships between items in a dataset. It involves:
+1. Frequent Itemset Generation: 
+    Find itemsets meeting a minimum support threshold.
+2. Rule Generation: 
+    Create rules from frequent itemsets that meet a minimum confidence threshold.
+
+Algorrithm:
+1. Input: 
+    Dataset of transactions, minimum support, and minimum confidence.
+2. Generate Candidate Itemsets: 
+    Start with single items and progressively form larger itemsets.
+3. Count Support: 
+    Calculate the frequency of each itemset.
+4. Prune Infrequent Itemsets: 
+    Eliminate itemsets below the minimum support threshold.
+5. Generate Association Rules: 
+    Create rules from frequent itemsets and calculate confidence.
+6. Output: 
+    Association rules that meet the minimum support and confidence criteria.
+
+How to Do:
+Open File -> Associate -> Choose -> Apriori / FPGrowth -> Choose needed parameter -> Start 
